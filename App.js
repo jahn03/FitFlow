@@ -1,25 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, Image, Alert, Button, StatusBar, Platform, SafeAreaView } from 'react-native';
+import HomeScreen from './app/screens/HomeScreen';
 
 export default function App() {
 
-  return (
-    <SafeAreaView style={styles.container}>
-      <Text>Test Message</Text>
-      <Image source={{ 
-        width: 200,
-        height: 300,
-        uri: "https://picsum.photos/200/300"}}/>
-      <StatusBar style="auto" />
-    </SafeAreaView>
-  );
+  return <HomeScreen />;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#160F29',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
